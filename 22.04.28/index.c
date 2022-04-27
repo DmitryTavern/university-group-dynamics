@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int getAbs(int number);
 int getSquare(int number);
 int getCube(int number);
 int getInverted(int number);
+float getDegree(int number);
 
 int main()
 {
@@ -15,6 +17,7 @@ int main()
   printf("getCube(3) = %d\n", getCube(3));
   printf("getInverted(3) = %d\n", getInverted(3));
   printf("getInverted(-3) = %d\n", getInverted(-3));
+  printf("getDegree(3) = %f\n", getDegree(3));
 }
 
 int getAbs(int number)
@@ -35,4 +38,9 @@ int getCube(int number)
 int getInverted(int number)
 {
   return number < 0 ? abs(number) : -1 * number;
+}
+
+float getDegree(int number)
+{
+  return pow(number, -1);
 }
