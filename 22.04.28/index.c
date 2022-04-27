@@ -4,6 +4,7 @@
 int getAbs(int number);
 int getSquare(int number);
 int getCube(int number);
+int getInverted(int number);
 
 int main()
 {
@@ -12,6 +13,8 @@ int main()
   printf("getAbs(-1) = %d\n", getAbs(-1));
   printf("getSquare(3) = %d\n", getSquare(3));
   printf("getCube(3) = %d\n", getCube(3));
+  printf("getInverted(3) = %d\n", getInverted(3));
+  printf("getInverted(-3) = %d\n", getInverted(-3));
 }
 
 int getAbs(int number)
@@ -27,4 +30,9 @@ int getSquare(int number)
 int getCube(int number)
 {
   return number * number * number;
+}
+
+int getInverted(int number)
+{
+  return number < 0 ? abs(number) : -1 * number;
 }
