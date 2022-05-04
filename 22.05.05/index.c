@@ -9,4 +9,6 @@ int main()
   printf("Text message 3\n");
   printf("Text message 4\n");
   printf("Text message 5\n");
+
+  printf("Text message 6\n");
 }
