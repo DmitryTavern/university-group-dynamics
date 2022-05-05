@@ -11,5 +11,5 @@ int main()
   printf("Text message 4\n");
   printf("Text (edited) message 5.1\n");
 
-  printf("Text message 6\n");
+  printf("Text age 6\n");
 }
